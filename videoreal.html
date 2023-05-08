@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<head>
+    <style>
+      .youtube-box {
+        display: inline-block; /*박스를 인라인 블록으로 설정하여, 박스가 가로로 정렬 되도록*/
+        position: relative;
+        width: 100%; /*폭 설정*/
+        max-width: 390px; /*최대 폭 설정*/
+        margin-bottom: 30px; /*아래 여백 설정*/
+        overflow: hidden; 
+        background-color: #FFFFFF; /*박스 배경 설정*/
+        border-radius: 7px; /*박스 모서리 둥굴게*/
+        margin-left: 53px; /*박스와 다른 요소 간 왼쪽 간격*/
+        justify-content: center; /*컨텐츠 양쪽 정렬*/
+        border: 3px solid #FAEDCD; /* 테두리*/
+        padding: 10px; /*테두리와 박스 내부의 간격 설정*/
+      }
+      
+      .youtube-box img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .youtube-box a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+      }
+      
+      .youtube-box .youtube-title {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 1;
+      }
+      
+      .youtube-box a:hover .youtube-title {
+        display: block;
+      }
+      
+      .youtube-box a:hover img {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+      }
+      .let {
+        background-color: #F5DF99;
+        border:3px solid #867070; /*픽셀의 굵기를 가진(solid) 회색(#ddd) 선을 요소(element) 주변에 그리는 것*/
+        padding: 0.3px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #555;
+      }
+    </style>
+</head>
+<body style="background-color:#FEFAE0;">
+  <div class="let">
+  <h2>💄 화장 입문자를 위한 영상 💄</h2>
+  </div>
+
+    <div class="youtube-box">
+        <a href="https://www.youtube.com/watch?v=cRly-7wyQww&t=25s" target="_blank">
+          <img src="https://img.youtube.com/vi/cRly-7wyQww/maxresdefault.jpg" alt="Youtube Thumbnail">
+          <span class="youtube-title">같은 얼굴 100% 활용하는 법💙<br>
+            화알못 필수 실청‼️(오버립/밑트임/아이라인/속눈썹/블러셔)
+          </span>
+        </a>
+    </div>
+    <div class="youtube-box">
+        <a href="https://www.youtube.com/watch?v=BXTOb3jp4yU" target="_blank">
+          <img src="https://img.youtube.com/vi/BXTOb3jp4yU/maxresdefault.jpg" alt="Youtube Thumbnail">
+          <span class="youtube-title">메이크업 초보 얼른 오세요!!<br> 망침 없이 화장하는 법
+          </span>
+        </a>
+    </div>
+    <div class="youtube-box">
+      <a href="https://www.youtube.com/watch?v=pepB_qGZg5w" target="_blank">
+        <img src="https://img.youtube.com/vi/pepB_qGZg5w/maxresdefault.jpg" alt="Youtube Thumbnail">
+        <span class="youtube-title">섀도우 바르는 법 + 섀도우 팔레트 추천 BEST
+        </span>
+      </a>
+  </div>
+  <div class="youtube-box">
+    <a href="https://www.youtube.com/watch?v=PGL3QyPh1Ro&t=4s" target="_blank">
+      <img src="https://img.youtube.com/vi/PGL3QyPh1Ro/maxresdefault.jpg" alt="Youtube Thumbnail">
+      <span class="youtube-title">NEW✨왕초보 꾸안꾸 메이크업<br> (테크닉X,꿀팁O)
+      </span>
+    </a>
+</div><br><br><br>
+
+  <div class="let">
+  <h2>🥇 인기 동영상 🥇</h2>
+  </div>
+
+    <div class="youtube-box">
+        <a href="https://www.youtube.com/watch?v=Bl7WRFq_aYA" target="_blank">
+          <img src="https://img.youtube.com/vi/Bl7WRFq_aYA/maxresdefault.jpg" alt="Youtube Thumbnail">
+          <span class="youtube-title">정~말 오래 걸리긴하지만 그만큼 '100배 1000배<br> 예뻐지는 메이크업‼' 🔥제발 따라해주세요!!!!!!!!!🔥
+          </span>
+        </a>
+    </div>
+    <div class="youtube-box">
+      <a href="https://www.youtube.com/watch?v=B6cP4bkTDNc" target="_blank">
+        <img src="https://img.youtube.com/vi/B6cP4bkTDNc/maxresdefault.jpg" alt="Youtube Thumbnail">
+        <span class="youtube-title">화장 지우니 아이유가...? (feat. 똥손+톤알못에 💜톤착 메이크업💜을 더하면? )<br>
+          아이유 라일락 커버 메이크업/쿨톤 메이크업|아이유 한스푼🥄</span>
+      </a>
+    </div>    
+  <div class="youtube-box">
+    <a href="https://www.youtube.com/watch?v=tYLEcbEYBIw" target="_blank">
+      <img src="https://img.youtube.com/vi/tYLEcbEYBIw/maxresdefault.jpg" alt="Youtube Thumbnail">
+      <span class="youtube-title">같은사람이라고??<br> 여신강림 주경이 실사판 메이크업
+      </span>
+    </a>
+</div>
+<div class="youtube-box">
+  <a href="https://www.youtube.com/watch?v=38TC3_RljWo" target="_blank">
+    <img src="https://img.youtube.com/vi/38TC3_RljWo/maxresdefault.jpg" alt="Youtube Thumbnail">
+    <span class="youtube-title">👀눈 2배로 커지는 눈성형 메이크업<br>애교살, 뒷트임 하는 법
+    </span>
+  </a>
+</div>
+<div class="youtube-box">
+  <a href="https://www.youtube.com/watch?v=2JE21ynK0tQ" target="_blank">
+    <img src="https://img.youtube.com/vi/2JE21ynK0tQ/maxresdefault.jpg" alt="Youtube Thumbnail">
+    <span class="youtube-title">11년차 메이크업전문가는 화장할때 절.대 안하는 6가지<br>
+       잘못된 메이크업상식, 화장잘하는방법, 화장디테일팁
+    </span>
+  </a>
+</div>
+<div class="youtube-box">
+  <a href="https://www.youtube.com/watch?v=ARtyd3MUfyY" target="_blank">
+    <img src="https://img.youtube.com/vi/ARtyd3MUfyY/maxresdefault.jpg" alt="Youtube Thumbnail">
+    <span class="youtube-title">🍇Mellow Burgundy Makeup<br> 멜로우 버건디 메이크업
+    </span>
+  </a>
+</div>
+<div class="youtube-box">
+  <a href="https://www.youtube.com/watch?v=XTLKe8lBrjA" target="_blank">
+    <img src="https://img.youtube.com/vi/XTLKe8lBrjA/maxresdefault.jpg" alt="Youtube Thumbnail">
+    <span class="youtube-title">이 메이크업하면 무조건 번호따임<br>축구직관하러 가요❕ 같이 준비해요😋
+    </span>
+  </a>
+</div>
+<div class="youtube-box">
+  <a href="https://www.youtube.com/watch?v=Bi8QT_4s4MM" target="_blank">
+    <img src="https://img.youtube.com/vi/Bi8QT_4s4MM/maxresdefault.jpg" alt="Youtube Thumbnail">
+    <span class="youtube-title">여름에 딱🌱 초간단 꾸안꾸 메이크업🍬<br>같이 준비해요! feat.노아이라인
+    </span>
+  </a>
+</div><br><br><br>
+
+  <div class="let">
+    <h2>🌻 연예인 커버 메이크업 🌻</h2>
+    </div>
+
+    <div class="youtube-box">
+        <a href="https://www.youtube.com/watch?v=T7ZHzzD7Aog" target="_blank">
+          <img src="https://img.youtube.com/vi/T7ZHzzD7Aog/maxresdefault.jpg" alt="Youtube Thumbnail">
+          <span class="youtube-title">아이브 장원영 커버 메이크업💖<br> 탱글 피부부터 색조, 트위티뱅까지 손민수👸🏻✨
+          </span>
+        </a>
+    </div>
+    <div class="youtube-box">
+      <a href="https://www.youtube.com/watch?v=HQ1xV45bPqA" target="_blank">
+        <img src="https://img.youtube.com/vi/HQ1xV45bPqA/maxresdefault.jpg" alt="Youtube Thumbnail">
+        <span class="youtube-title">레드벨벳 아이린 빨간맛 커버메이크업🍒🍉
+        </span>
+      </a>
+  </div>
+  <div class="youtube-box">
+    <a href="https://www.youtube.com/watch?v=1h2HltMeG0g" target="_blank">
+      <img src="https://img.youtube.com/vi/1h2HltMeG0g/maxresdefault.jpg" alt="Youtube Thumbnail">
+      <span class="youtube-title">일반인에게🤟(여자)아이들<br> 'TOMBOY' 민니 커버메이크업🖤
+      </span>
+    </a>
+</div>
+<div class="youtube-box">
+  <a href="https://www.youtube.com/watch?v=EJ0__YjtsTw" target="_blank">
+    <img src="https://img.youtube.com/vi/EJ0__YjtsTw/maxresdefault.jpg" alt="Youtube Thumbnail">
+    <span class="youtube-title">뉴진스 하니 DITTO 메이크업 🤎👖
+    </span>
+  </a>
+</div><br><br><br>
+
+<div class="let">
+<h2>👒 헤어 스타일링 👒</h2>
+</div>
+
+    <div class="youtube-box">
+        <a href="https://www.youtube.com/watch?v=KlqQ36ytyq0" target="_blank">
+          <img src="https://img.youtube.com/vi/KlqQ36ytyq0/maxresdefault.jpg" alt="Youtube Thumbnail">
+          <span class="youtube-title">거지존❌ 매력존💛<br> 중단발 셀프 헤어 스타일링 6가지!
+          </span>
+        </a>
+    </div>
+    <div class="youtube-box">
+      <a href="https://www.youtube.com/watch?v=iQH-ozxwbGM" target="_blank">
+        <img src="https://img.youtube.com/vi/iQH-ozxwbGM/maxresdefault.jpg" alt="Youtube Thumbnail">
+        <span class="youtube-title">묶는 위치에 따라 다른 감성<br> 쉽고빠른 똥머리 헤어스타일링!
+        </span>
+      </a>
+  </div>
+  <div class="youtube-box">
+    <a href="https://www.youtube.com/watch?v=4alAlDC6UrE" target="_blank">
+      <img src="https://img.youtube.com/vi/4alAlDC6UrE/maxresdefault.jpg" alt="Youtube Thumbnail">
+      <span class="youtube-title">[차홍뷰티]<br> 기장별 힙한 레이어드 커트 스타일 추천
+      </span>
+    </a>
+  </div>
+  <div class="youtube-box">
+    <a href="https://www.youtube.com/watch?v=6U1aETVTn0w" target="_blank">
+      <img src="https://img.youtube.com/vi/6U1aETVTn0w/maxresdefault.jpg" alt="Youtube Thumbnail">
+      <span class="youtube-title">요즘 아이돌들이 꼭 하는 웨이브💇🏻‍♀️<br> (ft.카즈하 웨이브) 똥손 필수 시청‼️
+      </span>
+    </a>
+  </div>
+</body>
+</html>
+  
+
