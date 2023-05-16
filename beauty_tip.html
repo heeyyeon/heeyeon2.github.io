@@ -5,7 +5,7 @@
     <style>
         .container {
             display: table;
-            margin-top: 25px;
+            margin-top: 35px;
             margin-left: 100px;
         }
         
@@ -21,11 +21,11 @@
             top: 100;
             left: 50%;
 
-            background-color: #CCD5AE;
+            background-color: #EDCDBB;
             padding: 20px;
-            border: 2.5px solid #000;
-            width: 560px;
-            height: 560px;
+            border: 7px double #000;
+            width: 800px;
+            height: 800px;
         }
         
         .let {
@@ -39,7 +39,7 @@
         }
         
         #info-title {
-            font-size: 24px;
+            font-size: 34px;
             font-weight: bold;
             color: #000;
             text-align: center; /* 가운데 정렬 */
@@ -47,7 +47,7 @@
         }
         
         #info-text {
-            font-size: 16px;
+            font-size: 21px;
             line-height: 1.5;
             color: #3C2317; 
             text-align: left; /* 왼쪽 정렬 */
@@ -61,11 +61,11 @@
 
     <div class="container">
         <div class="image-container">
-            <img src="face1.png" usemap="#face-map" width="600px" height="600px">
+            <img src="face2.png" usemap="#face-map" width="800px" height="800px">
             <map name="face-map">
-                <area shape="rect" coords="342,159,387,207" onclick="showInfo('eyes')">
-                <area shape="rect" coords="374,252,420,294" onclick="showInfo('lips')">
-                <area shape="rect" coords="316,220,365,266" onclick="showInfo('cheeks')">
+                <area shape="rect" coords="451,220,514,276" onclick="showInfo('eyes')">
+                <area shape="rect" coords="499,340,559,390" onclick="showInfo('lips')">
+                <area shape="rect" coords="418,290,487,356" onclick="showInfo('cheeks')">
             </map>
         </div>
         
