@@ -1,11 +1,73 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <h3>trend</h3>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      width: 600px;
+      margin-bottom: 20px;
+      background-color: #CCD5AE;
+    }
+
+    .box .image {
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .box .content {
+      padding-left: 20px;
+    }
+
+    .box .title {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .box .description {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .thumbnail-box {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+      .let {
+        background-color: #867070;
+        padding: 0.3px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+  </style>
 </head>
 <body>
+  <div class="let">
+    <h2>📜 Trend 📜</h2>
+  </div>
+  <div class="container">
+    <div class="box">
+        <div class="thumbnail-box" style="background-image: url('썸네일_이미지_파일_경로.jpg');"></div>
+      <div class="content">
+        <a href="링크_주소_1" target="_blank">
+          <div class="title">제목 1</div>
+        </a>
+        <div class="description">설명 1</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
