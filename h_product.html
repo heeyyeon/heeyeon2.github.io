@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hair Tip</title>
+  <style>
+    /* 전체 페이지 스타일 */
+    body {
+      font-family: Arial, sans-serif; /* 폰트 패밀리 지정 */
+      margin: 0; /* 바디의 마진을 0으로 설정 */
+      padding: 0; /* 바디의 패딩을 0으로 설정 */
+      background-color: #f7f7f7; /* 배경색 설정 */
+    }
+
+    .container {
+      max-width: 1400px; /* 컨테이너의 최대 너비를 1400px로 설정 */
+      margin: 0 auto; /* 컨테이너를 수평 가운데로 정렬 */
+      padding: 20px; /* 컨테이너의 패딩 설정 */
+    }
+
+    /* 제목 스타일 */
+    h1 {
+      text-align: center; /* 제목을 가운데 정렬 */
+      color: #333; /* 제목의 글자색 설정 */
+      margin-bottom: 20px; /* 하단 여백 설정 */
+    }
+
+    /* 제품 목록 스타일 */
+    .product-list {
+      display: grid; /* 그리드 형태로 아이템 배치 */
+      grid-template-columns: repeat(3, 1fr); /* 3개의 열로 반복 */
+      gap: 20px; /* 그리드 아이템 사이의 간격 설정 */
+    }
+
+    .product-card {
+      background-color: #fff; /* 제품 카드의 배경색 설정 */
+      border-radius: 5px; /* 제품 카드의 테두리 반경 설정 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+      padding: 20px; /* 제품 카드의 패딩 설정 */
+      width: 400px; /* 너비 설정 */
+      height: 520px; /* 높이 설정 */
+      }
+
+    .product-card img {
+      width: 300px; /* 이미지의 최대 너비를 100%로 설정 */
+      height: 300px; /* 이미지의 높이를 자동으로 조정 */
+      margin: 0 auto; /* 가로 중앙 정렬 */
+      display: block; /* 이미지를 블록 요소로 설정하여 가운데 정렬 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+      }
+
+    .product-card h3 {
+      color: #333; /* 제품 이름의 글자색 설정 */
+      font-size: 18px; /* 제품 이름의 글자 크기 설정 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+    }
+
+    .product-card p {
+      color: #777; /* 제품 설명의 글자색 설정 */
+      font-size: 14px; /* 제품 설명의 글자 크기 설정 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+    }
+
+    .product-card .price {
+      font-weight: bold; /* 가격의 글자를 굵게 설정 */
+      color: #ff5a5f; /* 가격의 글자색 설정 */
+      font-size: 16px; /* 가격의 글자 크기 설정 */
+    }
+
+    /* 링크 스타일 */
+    a {
+      color: #ff5a5f; /* 링크의 글자색 설정 */
+      text-decoration: none; /* 링크의 밑줄 제거 */
+    }
+
+    a:hover {
+      text-decoration: underline; /* 링크에 마우스를 올렸을 때 밑줄 표시 */
+    }
+
+    /*상단 제목 css*/
+    .let {
+      background-color: #867070; /* 배경색 설정 */
+      padding: 0.3px; /* 안쪽 여백 설정 */
+      text-align: center; /* 가운데 정렬 */
+      font-size: 18px; /* 글자 크기 설정 */
+      font-weight: bold; /* 글자를 굵게 설정 */
+      margin-bottom: 40px; /* 하단 여백 설정 */
+      color: #fff; /* 글자색 설정 */
+    }
+  </style>
+</head>
+<body style="background-color:#FEFAE0;"> <!-- 바탕색 설정 -->
+  <div class="let">
+    <h2>Hair care Product review</h2> <!-- 제목 -->
+  </div>
+  
+  <div class="container"> <!-- 컨테이너 시작 -->
+    <div class="product-list"> <!-- 제품 목록 시작 -->
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017142343ko.jpg?l=ko" alt="Product 1"> <!-- 제품 이미지 -->
+        <h3>[1등 집착헤어팩]어노브 대용량 딥 데미지 트리트먼트 EX 1&1 기획세트</h3> <!-- 제품 이름 -->
+        <p>1. 극손상모 단백질 집중 밀착<br>2. 36가지 단백/영양 성분이 풍부한 영양공급<br>3. 전문 조향 기술을 적용한 시그니처 퍼퓸<br>4. 펌,염색,열에 손상된 큐티클 거칠기 개선</p> <!-- 제품 설명 -->
+        <p class="price">42,000원</p> <!-- 제품 가격 -->
+        <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171423&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
