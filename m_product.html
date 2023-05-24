@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hair Tip</title>
+  <style>
+    /* 전체 페이지 스타일 */
+    body {
+      font-family: Arial, sans-serif; /* 폰트 패밀리 지정 */
+      margin: 0; /* 바디의 마진을 0으로 설정 */
+      padding: 0; /* 바디의 패딩을 0으로 설정 */
+      background-color: #f7f7f7; /* 배경색 설정 */
+    }
+
+    .container {
+      max-width: 1400px; /* 컨테이너의 최대 너비를 1400px로 설정 */
+      margin: 0 auto; /* 컨테이너를 수평 가운데로 정렬 */
+      padding: 20px; /* 컨테이너의 패딩 설정 */
+    }
+
+    /* 제목 스타일 */
+    h1 {
+      text-align: center; /* 제목을 가운데 정렬 */
+      color: #333; /* 제목의 글자색 설정 */
+      margin-bottom: 20px; /* 하단 여백 설정 */
+    }
+
+    /* 제품 목록 스타일 */
+    .product-list {
+      display: grid; /* 그리드 형태로 아이템 배치 */
+      grid-template-columns: repeat(3, 1fr); /* 3개의 열로 반복 */
+      gap: 20px; /* 그리드 아이템 사이의 간격 설정 */
+    }
+
+    .product-card {
+      background-color: #fff; /* 제품 카드의 배경색 설정 */
+      border-radius: 5px; /* 제품 카드의 테두리 반경 설정 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+      padding: 20px; /* 제품 카드의 패딩 설정 */
+      width: 400px; /* 너비 설정 */
+      height: 520px; /* 높이 설정 */
+      }
+
+    .product-card img {
+      width: 300px; /* 이미지의 최대 너비를 100%로 설정 */
+      height: 300px; /* 이미지의 높이를 자동으로 조정 */
+      margin: 0 auto; /* 가로 중앙 정렬 */
+      display: block; /* 이미지를 블록 요소로 설정하여 가운데 정렬 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+      }
+
+    .product-card h3 {
+      color: #333; /* 제품 이름의 글자색 설정 */
+      font-size: 18px; /* 제품 이름의 글자 크기 설정 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+    }
+
+    .product-card p {
+      color: #777; /* 제품 설명의 글자색 설정 */
+      font-size: 14px; /* 제품 설명의 글자 크기 설정 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+    }
+
+    .product-card .price {
+      font-weight: bold; /* 가격의 글자를 굵게 설정 */
+      color: #ff5a5f; /* 가격의 글자색 설정 */
+      font-size: 16px; /* 가격의 글자 크기 설정 */
+    }
+
+    /* 링크 스타일 */
+    a {
+      color: #ff5a5f; /* 링크의 글자색 설정 */
+      text-decoration: none; /* 링크의 밑줄 제거 */
+    }
+
+    a:hover {
+      text-decoration: underline; /* 링크에 마우스를 올렸을 때 밑줄 표시 */
+    }
+
+    .let {
+      background-color: #867070; /* 배경색 설정 */
+      padding: 0.3px; /* 안쪽 여백 설정 */
+      text-align: center; /* 가운데 정렬 */
+      font-size: 18px; /* 글자 크기 설정 */
+      font-weight: bold; /* 글자를 굵게 설정 */
+      margin-bottom: 40px; /* 하단 여백 설정 */
+      color: #fff; /* 글자색 설정 */
+    }
+  </style>
+</head>
+<body style="background-color:#FEFAE0;"> <!-- 바탕색 설정 -->
+  <div class="let">
+    <h2>Beauty Product review</h2> <!-- 제목 -->
+  </div>
+  
+  <div class="container"> <!-- 컨테이너 시작 -->
+    <div class="product-list"> <!-- 제품 목록 시작 -->
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0018/A00000018422218ko.jpg?l=ko"> <!-- 제품 이미지 -->
+        <h3>[NEW]에스쁘아 비벨벳 커버쿠션 뉴클래스 레터링 숄더백 증정기획(+미니쿠션 증정)</h3> <!-- 제품 이름 -->
+        <p>1. 추천타입은 수부지, 지성피부<br>2. 피부 진정 및 피지 조절<br>3. 이브 비건&블루라이트 차단<br>4. 하이 데피니션 커버 파우더</p> <!-- 제품 설명 -->
+        <p class="price">38,000원</p> <!-- 제품 가격 -->
+        <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000184222&dispCatNo=10000010002&curation=like&rccode=pc_category_01_a&egcode=c001_c001&egrankcode=1&trackingCd=Cat10000010002_Clickbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0018/A00000018461307ko.jpg?l=ko">
+        <h3>[스파츌라브러시 0원 증정] 웨이크메이크 워터 벨벳 커버 파운데이션 (기획/단품)</h3>
+        <p>1. 48시간 색상 지속<br>2. 6시간 들뜸 방지<br>3. 얇고 가벼운 밀착<br>4. 5가지의 다양한 컬러 색상</p>
+        <p class="price">38,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000149501&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016521531ko.jpg?l=ko">
+        <h3>[1등 파우더]바닐라코 프라이머 피니쉬 파우더 12g</h3>
+        <p>1. 세범 컨트롤, 픽싱 효과, 성분 UPGRADE!<br>2. 단 1회 사용으로 유분량 71% 감소<br>3. 번들거림을 한 번에 잡아주는 깔끔 픽싱 파우더<br>4. 곱고 가벼운 파우더 입자로 뭉침 없이 매끄러운 블러 효과</p>
+        <p class="price">22,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000165215&dispCatNo=10000010002&curation=like&rccode=pc_category_01_a&egcode=c001_c001&egrankcode=3&trackingCd=Cat10000010002_Clickbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0018/A00000018181902ko.jpg?l=ko">
+        <h3>에뛰드 컬 픽스 마스카라 1+1 기획</h3>
+        <p>1. 글로우픽 컬링 마스카라 부문 1위<br>2. 워터 프루프 & 스머지 프루프 실험 완료!<br>3. 깔끔 컬링 맞춤 브러쉬로 속눈썹 뒤쪽까지 컬링 업!<br>4. 한국 비건 인증원 인증 완료</p>
+        <p class="price">15,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000181819&dispCatNo=10000010002&curation=like&rccode=pc_category_01_a&egcode=c001_c001&egrankcode=4&trackingCd=Cat10000010002_Clickbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017759310ko.jpg?l=ko">
+        <h3>[신규컬러 추가] 더샘 커버 퍼펙션 트리플 팟 컨실러 4colors</h3>
+        <p>1. 하나로 완성하는 멀티 플레이 팟<br>2. 잡티가 비치지 않는 촘촘한 커버력<br>3. 매끄럽게 감싸주는 멜팅 핏 텍스처<br>4. 결점 부위에 맞는 보색 커버로 깨끗한 피부 바탕 완성</p>
+        <p class="price">25,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000177593&dispCatNo=10000010002&curation=like&rccode=pc_category_01_a&egcode=c001_c001&egrankcode=5&trackingCd=Cat10000010002_Clickbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0018/A00000018059336ko.jpg?l=ko">
+        <h3>[NEW] 라네즈 네오 에센셜 블러링 피니시 파우더 7g (+파우치 금액대 증정)</h3>
+        <p>1. 마이크로 파우더가 얇고 투명하게 블러딩<br>2. 스킨케어 성분 함유로 속 건조 없는 마무리<br>3. 특허 보유 리필망으로 가루 날림 ZERO!<br>4. 아모레퍼시픽 최초 신소재 칼집 리필망</p>
+        <p class="price">16,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000180593&dispCatNo=10000010002&curation=like&rccode=pc_category_01_a&egcode=c001_c001&egrankcode=7&trackingCd=Cat10000010002_Clickbest">상품 및 리뷰보기</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+</body>
+</head>
+</html>
