@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hair Tip</title>
+  <style>
+    /* 전체 페이지 스타일 */
+    body {
+      font-family: Arial, sans-serif; /* 폰트 패밀리 지정 */
+      margin: 0; /* 바디의 마진을 0으로 설정 */
+      padding: 0; /* 바디의 패딩을 0으로 설정 */
+      background-color: #f7f7f7; /* 배경색 설정 */
+    }
+
+    .container {
+      max-width: 1400px; /* 컨테이너의 최대 너비를 1400px로 설정 */
+      margin: 0 auto; /* 컨테이너를 수평 가운데로 정렬 */
+      padding: 20px; /* 컨테이너의 패딩 설정 */
+    }
+
+    /* 제목 스타일 */
+    h1 {
+      text-align: center; /* 제목을 가운데 정렬 */
+      color: #333; /* 제목의 글자색 설정 */
+      margin-bottom: 20px; /* 하단 여백 설정 */
+    }
+
+    /* 제품 목록 스타일 */
+    .product-list {
+      display: grid; /* 그리드 형태로 아이템 배치 */
+      grid-template-columns: repeat(3, 1fr); /* 3개의 열로 반복 */
+      gap: 20px; /* 그리드 아이템 사이의 간격 설정 */
+    }
+
+    .product-card {
+      background-color: #fff; /* 제품 카드의 배경색 설정 */
+      border-radius: 5px; /* 제품 카드의 테두리 반경 설정 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+      padding: 20px; /* 제품 카드의 패딩 설정 */
+      width: 400px; /* 너비 설정 */
+      height: 520px; /* 높이 설정 */
+      }
+
+    .product-card img {
+      width: 300px; /* 이미지의 최대 너비를 100%로 설정 */
+      height: 300px; /* 이미지의 높이를 자동으로 조정 */
+      margin: 0 auto; /* 가로 중앙 정렬 */
+      display: block; /* 이미지를 블록 요소로 설정하여 가운데 정렬 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+      }
+
+    .product-card h3 {
+      color: #333; /* 제품 이름의 글자색 설정 */
+      font-size: 18px; /* 제품 이름의 글자 크기 설정 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+    }
+
+    .product-card p {
+      color: #777; /* 제품 설명의 글자색 설정 */
+      font-size: 14px; /* 제품 설명의 글자 크기 설정 */
+      margin-bottom: 10px; /* 하단 여백 설정 */
+    }
+
+    .product-card .price {
+      font-weight: bold; /* 가격의 글자를 굵게 설정 */
+      color: #ff5a5f; /* 가격의 글자색 설정 */
+      font-size: 16px; /* 가격의 글자 크기 설정 */
+    }
+
+    /* 링크 스타일 */
+    a {
+      color: #ff5a5f; /* 링크의 글자색 설정 */
+      text-decoration: none; /* 링크의 밑줄 제거 */
+    }
+
+    a:hover {
+      text-decoration: underline; /* 링크에 마우스를 올렸을 때 밑줄 표시 */
+    }
+
+    .let {
+      background-color: #867070; /* 배경색 설정 */
+      padding: 0.3px; /* 안쪽 여백 설정 */
+      text-align: center; /* 가운데 정렬 */
+      font-size: 18px; /* 글자 크기 설정 */
+      font-weight: bold; /* 글자를 굵게 설정 */
+      margin-bottom: 40px; /* 하단 여백 설정 */
+      color: #fff; /* 글자색 설정 */
+    }
+  </style>
+</head>
+<body style="background-color:#FEFAE0;"> <!-- 바탕색 설정 -->
+  <div class="let">
+    <h2>Skin care Product recommend</h2> <!-- 제목 -->
+  </div>
+  
+  <div class="container"> <!-- 컨테이너 시작 -->
+    <div class="product-list"> <!-- 제품 목록 시작 -->
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016232320ko.jpg?l=ko"> <!-- 제품 이미지 -->
+        <h3>[대용량 한정기획] 구달 청귤 비타C 잡티케어 세럼 50ml+31ml 증정 기획</h3> <!-- 제품 이름 -->
+        <p>1. 제주 청귤추출물이 70% 함유<br>2. 2주 잡티 이별을 위해 미백 성분 4% 함유<br>3. 민감한 피부도 걱정 없는 저자극 순한 잡티 세럼<br>4. 뷰티어워즈 수상 누적 앰블럼 20관왕</p> <!-- 제품 설명 -->
+        <p class="price">43,000원</p> <!-- 제품 가격 -->
+        <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000162323&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/A00000014586126ko.jpg?l=ko">
+        <h3>[단독기획] 토리든 다이브인 저분자 히알루론산 세럼 더블기획 (50ml+50ml)</h3>
+        <p>1. 판테놀과 알란토인의 수분 진정 효과<br>
+        수분 자석 히알루론산으로 채우는 속당김 해소 세럼<br>3. 출시 후 4년간 24관왕<<br>4. 속보습 개선 임상완료</p>
+        <p class="price">36,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000145861&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017587811ko.jpg?l=ko">
+        <h3>[5월 올영픽/대용량] 파티온 노스카나인 트러블 세럼 단독 기획(50ml+15ml)</h3>
+        <p>1. 시카보다 2배 더 강력한 동아제약 특허 진정 성분 46%<br>2. 1회 사용으로 손상된 피부 장벽 진정 효과<br>3. 트러블의 원인이 되는 여드름성 피부의 유분 31% 개선<br>4. 인체 적용 시험 완료</p>
+        <p class="price">38,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000175878&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0018/A00000018147206ko.jpg?l=ko">
+        <h3>[1+1 한정기획] 크리니크 모이스춰 써지 쏙보습/핑크리치크림 50ml 1+1 기획</h3>
+        <p>1. 72시간 강력한 수분 지속<br>2. 시카 추출물을 통한 피부 진정 효과<br>3. 비타민 E성분을 통한 피부 보호<br>4. new 발효 알로에 기술 & 수분 순환 기술</p>
+        <p class="price">43,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000181472&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0017/A00000017913005ko.jpg?l=ko">
+        <h3>[온라인몰 단독기획]바이오더마 아토덤 인텐시브 밤 500ml + 75ml 기획</h3>
+        <p>1. 마르지 않는 깊은 보습 & 영양감 선사<br>2. 빠른 흡수력과 편안한 사용감 제공<br>3. 민감성 피부, 영우아도 함께 사용 가능<br>4. 외부 자극에 의한 붉어진 피부 개선율 874%</p>
+        <p class="price">25,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000171425&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016461503ko.jpg?l=ko">
+        <h3>[2세대 천만크림] 닥터지 레드 블레미쉬 클리어 수딩 크림 70ml+30ml 세트</h3>
+        <p>1. 10-시카로 강화된 피부 진정<br>2. 100시간 롱래스팅 수분 케어<br>3. 하이포알러제닉 테스트 완료<br>4. 임상 테스트로 확인된 일상 속 5대 자극 진정</p>
+        <p class="price">28,000원</p>
+       <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164615&dispCatNo=90000010009&trackingCd=Best_Sellingbest">상품 및 리뷰보기</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+</body>
+</head>
+</html>
