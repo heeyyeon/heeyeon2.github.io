@@ -2,12 +2,14 @@
 <html>
 <head>
   <style>
+    /* 컨테이너 스타일 */
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
+    /* 박스 스타일 */
     .box {
       display: flex;
       align-items: center;
@@ -16,6 +18,7 @@
       background-color: #FAEDCD;
     }
 
+     /* 이미지 스타일 */
     .box .image {
       width: 200px;
       height: 200px;
@@ -23,10 +26,12 @@
       background-position: center;
     }
 
+    /* 콘텐츠 스타일 */
     .box .content {
       padding-left: 20px;
     }
 
+      /* 제목 스타일 */
     .box .title {
       font-size: 23px;
       font-weight: bold;
@@ -34,16 +39,21 @@
       color: black; 
     }
 
+    /* 설명 스타일 */
     .box .description {
-      margin-top: 10px;
+      margin-top: 10px; /*위쪽 마진 설정*/
       font-size: 16px;
     }
+    
+     /* 사진 박스 스타일 */
     .thumbnail-box {
         width: 270px;
         height: 180px;
-        background-size: cover;
-        background-position: center;
+        background-size: cover; /*배경 크기 설정*/
+        background-position: center;  /*배경 위치 설정*/
       }
+    
+      /* 상단 헤더 스타일 */
       .let {
         background-color: #867070;
         padding: 0.3px;
@@ -53,8 +63,10 @@
         margin-bottom: 40px;
         color: #fff;
     }
+    
+     /* 링크 스타일 */
      a {
-        text-decoration: none;
+        text-decoration: none; /*텍스트 장식 속성 제거*/
       }
   </style>
 </head>
