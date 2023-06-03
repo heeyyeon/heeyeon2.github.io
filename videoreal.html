@@ -44,9 +44,9 @@
         font-size: 16px;
         font-weight: bold;
         text-overflow: ellipsis; /*제목이 너무 길 경우 말 줄임표(...)로 표시*/
-        white-space: nowrap; /* 제목이 한 줄을 넘어가더라도 줄바꿈하지 않고 한 줄에 표시*/
-        overflow: hidden; /*제목이 넘칠 경우 숨김*/
-        z-index: 1;
+        white-space: nowrap; /* 제목이 한 줄을 넘어가더라도 줄바꿈하지 않고(가로 스크롤 x) 한 줄에 표시*/
+        overflow: hidden; /*제목이 넘칠 경우 초과된 부분 숨김*/
+        z-index: 1; /* 해당 요소가 다른 요소들과 겹치는 경우 상위로 올라오는 순서를 결정*/
       }
       
       .youtube-box a:hover .youtube-title {
