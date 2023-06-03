@@ -32,13 +32,13 @@
         
         /*상단 헤더*/
         .let {
-            background-color: #867070;
-            padding: 0.3px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 40px;
-            color: #fff;
+            background-color: #867070; /* 배경색 설정 */
+            padding: 0.3px; /* 안쪽 여백을 0.3px로 설정 */
+            text-align: center; /* 가운데 정렬 */
+            font-size: 18px; /* 폰트 크기 */
+            font-weight: bold; /* 폰트 굵기 */
+            margin-bottom: 40px; /* 하단 여백 */
+            color: #fff; /* 폰트 컬러 흰색 */
         }
         
         /*정보 제목 스타일*/
@@ -84,14 +84,14 @@
         //showInfo() 함수를 정의하고, 파라미터 part를 받아와서 
         //해당하는 메이크업 부위에 대한 정보를 컨테이너에 표시하는 기능을 수행
         function showInfo(part) {      
-            const container = document.getElementById('info-container');
-            const title = document.getElementById('info-title');
-            const text = document.getElementById('info-text');
+            const container = document.getElementById('info-container');  //info-container라는 id를 가진 요소 가져옴
+            const title = document.getElementById('info-title'); //info-title이라는 id를 가진 요소 가져옴
+            const text = document.getElementById('info-text'); //info-text라는 id를 가진 요소 가져옴
 
             switch(part) {
                 case 'eyes':
-                    title.innerHTML = '&lt;Eyes makeup tips&gt;';
-                    text.innerHTML =
+                    title.innerHTML = '&lt;Eyes makeup tips&gt;';  //'eyes' case일 때 제목을 설정
+                    text.innerHTML =                               // 'eyes' case일 때 내용을 설정
                     '<p>① 나에게 적당한 아이라이너 찾는 Tip: <br>' +
                         '&nbsp;- 펜슬 아이라이너: 펜슬 아이라이너는 경험이 부족한 경우 완벽한 타입이다. <br>' +
                         '&nbsp;&nbsp; 이 제품은 리퀴드나 젤 타입보다 더 부드럽기 때문이다. <br>' +
