@@ -24,21 +24,21 @@
     }
     
     li a:hover{ /*마우스가 a태그 위에 있을 때의 스타일 설정*/
-        background-color: #C89595;
-        color: white;
+        background-color: #C89595; /*배경색 지정*/
+        color: white; /*폰트 컬러*/
     }
     .navi li ul{	
         display: none; /*초기에 세부메뉴는 보이지 않도록*/
     }
     .navi li:hover ul{  /*마우스가 li 태그 위에 있을 때, 하위 ul 태그를 보이도록 함*/
-        display: block;
+        display: block; /* 블록 레벨 요소로 동작, 기본적으로 수직으로 쌓임*/
     }
     .header_wrap {
         width: 100%; /* 네비바 폭 조절 */
         margin: 0 auto; /* 네비바 가운데 정렬 */
         text-align: center; /* 가운데 정렬 */
-        padding: 0;
-        display: flex;
+        padding: 0; /* 내부 여백 0(없음)*/
+        display: flex; /*해당 요소 Flexbox 컨테이너로 설정*/
         justify-content: center; /* 내부 요소들 가운데 정렬 */
     }
     p{
@@ -48,10 +48,10 @@
         font-size: 50;
     }
     .container{
-        text-align: center; 
+        text-align: center;  /* 수평 가운데 정렬 */
     }
     table {
-        margin: 0 auto; 
+        margin: 0 auto; /* 0은 위쪽과 아래쪽 여백을 의미하고, auto는 좌우 여백을 자동으로 조절, 수평중앙정렬*/ 
     }
 </style>
 </head>
