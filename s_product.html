@@ -3,6 +3,48 @@
 <head>
   <title>Hair Tip</title>
   <style>
+    /* 드롭다운  */
+    ul{
+        list-style-type:none; /* 목록의 기호 없애기*/
+        margin: 0;
+        padding: 0; /* 목록 주위 여백 없애기*/
+    }
+    .navi > li{
+        float: left; /* 항목들 좌측으로 배치 */
+    }
+    .navi > li > a{
+        padding: 14px 62px; /* 위아래 10px, 좌우 60px의 패딩 설정 */
+        font-size: 20px;
+    }
+    li a{
+        background-color: #E8C4C4; /* 배경색 설정 */ 
+            text-decoration: none; /* 밑줄 제거 */
+            font-weight: bold; /* 글자 굵기 설정 */
+            color: white; /* 글자 색상 설정 */
+            display: block; /* 인라인 레벨 요소를 블록 레벨 요소로 변경 */
+            text-align: center; /* 가운데 정렬 */
+            padding: 10px; /* 위아래 10px의 패딩 설정 */
+    }
+    
+    li a:hover{ /*마우스가 a태그 위에 있을 때의 스타일 설정*/
+        background-color: #C89595; /*배경색 지정*/
+        color: white; /*폰트 컬러*/
+    }
+    .navi li ul{	
+        display: none; /*초기에 세부메뉴는 보이지 않도록*/
+    }
+    .navi li:hover ul{  /*마우스가 li 태그 위에 있을 때, 하위 ul 태그를 보이도록 함*/
+        display: block; /* 블록 레벨 요소로 동작, 기본적으로 수직으로 쌓임*/
+    }
+    .header_wrap {
+        width: 100%; /* 네비바 폭 조절 */
+        margin: 0 auto; /* 네비바 가운데 정렬 */
+        text-align: center; /* 가운데 정렬 */
+        padding: 0; /* 내부 여백 0(없음)*/
+        display: flex; /*해당 요소 Flexbox 컨테이너로 설정*/
+        justify-content: center; /* 내부 요소들 가운데 정렬 */
+    }
+  
     /* 전체 페이지 스타일 */
     body {
       font-family: Arial, sans-serif; /* 폰트 패밀리 지정 */
@@ -89,6 +131,43 @@
 </head>
 <body style="background-color:#FEFAE0;"> <!-- 바탕색 설정 -->
   <div class="let">
+  <div class="header_wrap">
+        <ul class="navi">
+           <li><a href="index.html">Beauty&nbsp;Tip&nbsp;Web</a></li>
+        
+            <li>
+                <a href="#">Makeup</a>
+                <ul>
+                    <li><a href="beauty_tip.html">Tip</a></li>
+                    <li><a href="videoreal.html">Video tutorial</a></li>
+                    <li><a href="m_product.html">Product recommend</a></li>
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#">Skin care</a>
+                <ul>
+                    <li><a href="skin_tip.html">Tip</a></li>
+                    <li><a href="s_product.html">Product recommend</a></li>
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#">Hair care</a>
+                <ul>
+                    <li><a href="hair_tip.html">Tip</a></li>
+                    <li><a href="h_product.html">Product recommend</a></li>
+                </ul>
+            </li>
+        
+            <li><a href="trend.html">Trend</a></li>
+        
+            <li><a href="blogreal.html">Blog</a></li>
+        
+            <li><a href="shoppingmall.html">Shoppping mall</a></li>
+        </ul>
+    </div> 
+  
     <h2>✨ Skin care Product recommend ✨</h2> <!-- 제목 -->
   </div>
   
